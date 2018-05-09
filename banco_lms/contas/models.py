@@ -4,7 +4,7 @@ class Coordenador(models.Model):
 
 	login = models.CharField("login", max_length=100)
 	senha = models.CharField("senha", max_length=30)
-	nome = models.CharField("nome", max_length=40)
+	nome = models.CharField("nome", max_length=100)
 	email = models.EmailField("email", max_length=200)
 	celular = models.IntegerField("celular")
 	data_expiracao = models.DateField("data_expiracao")
@@ -15,7 +15,7 @@ class Coordenador(models.Model):
 class Aluno(models.Model):
     
     login = models.CharField("login", max_length=100)
-    senha = models.CharField("senha", max_length=40)
+    senha = models.CharField("senha", max_length=30)
     nome = models.CharField("nome", max_length=100)
     email = models.EmailField("email", max_length=200)
     celular = models.IntegerField("celular")
@@ -27,13 +27,13 @@ class Aluno(models.Model):
 
 class Professor(models.Model):
     
-    login = models.CharField("login", max_length=30)
-    senha = models.CharField("senha", max_length=50)
+    login = models.CharField("login", max_length=100)
+    senha = models.CharField("senha", max_length=30)
     nome = models.CharField("nome", max_length=100)
-    email = models.EmailField("email", max_length=100)
+    email = models.EmailField("email", max_length=200)
     celular = models.CharField("celular", max_length=50)
     data_expiracao = models.DateField("data_expiracao", max_length=100)
-    apelido = models.CharField("apelido", max_length=20)
+    apelido = models.CharField("apelido", max_length=50)
 
     def __str__(self):
         return self.nome
