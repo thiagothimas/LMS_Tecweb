@@ -28,19 +28,19 @@ function(event){
         return false;
     }
 	
-	else if(camposenha.value == ""){
-		alert("Por favor, preencha o campo senha");
-		return false;
-	}
+    else if(camposenha.value == ""){
+         alert("Por favor, preencha o campo senha");
+         return false;
+    }
 
-	else if(campoconfirmsenha.value == ""){
-		alert("Por favor, preencha o campo confirmar senha");
-		return false;
-	}
-	else if(campoconfirmsenha.value != camposenha.value){
-		alert("Senhas não conferem");
-		return false;
-	}
+    else if(campoconfirmsenha.value == ""){
+	 alert("Por favor, preencha o campo confirmar senha");
+	 return false;
+    }
+    else if(campoconfirmsenha.value != camposenha.value){
+	 alert("Senhas não conferem");
+	 return false;
+    }
   
 }
 
@@ -89,14 +89,5 @@ function verificarCPF(c){
         /*alert(c + "nCPF Válido")*/
     }
 }
-	
-
-
-
-
-
-
-
-
 
 	
