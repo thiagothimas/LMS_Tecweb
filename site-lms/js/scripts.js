@@ -9,32 +9,32 @@ function(event){
 	var campoconfirmsenha = document.getElementById("confirmsenha");
 		
     if(campologin.value==""){
-        alert("Por favor, preencha o campo login.");
+        alert("Por favor, preencha o login.");
         return false;
     }
 	
     else if(camponomecompleto.value==""){
-        alert("Por favor, preencha o campo nome completo");
+        alert("Por favor, preencha o nome completo");
         return false;
     }
 	
     else if(campoemail.value==""){
-        alert("Por favor, preencha o campo e-mail");
+        alert("Por favor, preencha o e-mail");
         return false;
     }
 	
     else if(camponascimento.value==""){
-        alert("Por favor, preencha o campo nascimento");
+        alert("Por favor, preencha o nascimento");
         return false;
     }
 	
     else if(camposenha.value == ""){
-         alert("Por favor, preencha o campo senha");
+         alert("Por favor, preencha o senha");
          return false;
     }
 
     else if(campoconfirmsenha.value == ""){
-	 alert("Por favor, preencha o campo confirmar senha");
+	 alert("Por favor, preencha o confirmar senha");
 	 return false;
     }
     else if(campoconfirmsenha.value != camposenha.value){
