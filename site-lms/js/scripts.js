@@ -1,4 +1,5 @@
 document.getElementById("cad_aluno").onsubmit=
+/*Criação da função inicial*/
 function(event){
 	
 	var campologin = document.getElementById("login");
@@ -43,7 +44,7 @@ function(event){
     }
   
 }
-
+/*Criação da função Verificar CPF*/
 function verificarCPF(c){
     var i;
     s = c;
