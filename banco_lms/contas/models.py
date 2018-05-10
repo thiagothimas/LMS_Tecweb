@@ -49,4 +49,4 @@ class Mensagem(models.Model):
     resposta = models.CharField("resposta", max_length=400)
 
     def __str__(self):
-        return self.nome
+        return self.nome    
